@@ -12,8 +12,8 @@ api.auth(
 #Selection du projet voulu
 new_project = api.projects.get_by_slug('admin-projettest3')
 
-import pdb
-pdb.set_trace()
+#import pdb
+#pdb.set_trace()
 
 #Stockage dans une variable des users story (global)
 stories = api.user_stories.list(project=new_project.id)
