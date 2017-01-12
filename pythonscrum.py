@@ -1,6 +1,8 @@
 from taiga import TaigaAPI
 
-api = TaigaAPI()
+api = TaigaAPI(
+    host='http://10.0.0.190:8000/api/v1/'
+)
 
 api.auth(
     username='admin',
