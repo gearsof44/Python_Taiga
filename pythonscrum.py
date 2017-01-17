@@ -12,6 +12,7 @@ api.auth(
 )
 
 
+<<<<<<< HEAD
 def selectProject():
     #Selection du projet voulu
     name_projet = raw_input('Entrez le nom de votre projet : ')

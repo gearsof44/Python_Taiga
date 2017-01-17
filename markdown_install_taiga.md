@@ -1,6 +1,20 @@
-<p align="center" >
 # Guide d'installation d'un environnement de développement Taiga sous Debian 8
-</p>
+
+***Table of Contents***
+
+- [I- Installation Dépendances :](#)
+- [II- Installation de postgresql :](#)
+- [III- Paramétrage postgresql :](#)
+- [IV- Installation et paramétrage de Python :](#)
+- [V- Téléchargement du code backend :](#)
+- [VI- Téléchargement des dépendances liées à python](#)
+- [VII- Ajustement Django :](#)
+- [VIII- Remplir la base de donnée avec un projet/utilisateurs de base :](#)
+- [IX- Lancer la partie back-end](#)
+- [X- Installation de Ruby et Gems](#)
+- [XI- Installation de NodeJS , Gulp ET Bower](#)
+- [XII- Lancer le code côté front](#)
+- [Après un relancement de la machine host pour que l’appli puisse être lancée :](#)
 
 ### I- Installation Dépendances :
 
@@ -84,17 +98,18 @@ cd ..
 
 ### VIII- Remplir la base de donnée avec un projet/utilisateurs de base :
 
-*	Config connection taiga :
+Config connection taiga :
   ```bash
   cd /etc/postgresql/9.5/main/
 	sudo nano pg_hba.conf
   ```
-	* ajouter comme ci-dessous la ligne :
-      ```bash
-			"# Database administrative login by Unix domain socket"
-			local   all             postgres                                peer
-			local   all             taiga                                   md5
-      ```
+  
+	Ajoutez comme ci-dessous la ligne :
+	
+		"# Database administrative login by Unix domain socket"	
+		local   all             postgres                                peer
+		local   all             taiga                                   md5
+		
 ```bash
 sudo service postgresql restart
 cd /home/monuser/taiga-back/
