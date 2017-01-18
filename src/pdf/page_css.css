@@ -1,0 +1,46 @@
+.page_post_it {
+  margin-top: 2px;
+}
+
+.postit * {
+  margin: 5px;
+  width : 288px;
+  border: 1px solid black;
+}
+
+.identifier {
+  height : 40px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.title {
+  height : 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.tag {
+  height : 30px;
+  text-align: center;
+}
+
+.description {
+  height: 100px;
+  text-align: center;
+}
+
+.point{
+  height : 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.postit{
+  width : 300px;
+  height : 300px;
+  border: 1px solid black;
+  display: inline-block;
+  margin-left: 22px;
+  margin-top: 14px;
+}
