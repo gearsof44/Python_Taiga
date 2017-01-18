@@ -1,3 +1,0 @@
-#!/bin/sh
-#startup script for preppy-2.3.5
-exec "/Users/guillaume/dev/python/Python_Taiga/venv/bin/python" -m "preppy" $*
